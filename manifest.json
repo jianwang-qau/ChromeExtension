@@ -1,0 +1,28 @@
+{
+  "name": "复制亚马逊订单",
+  "version": "1.2",
+  "description": "复制亚马逊订单到邮差小马UPS。",
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "default_icon": "image/icon-32.png",
+    "default_title": "复制亚马逊订单",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "js/jquery-1.12.4.min.js", "js/common.js", "js/content-script.js" ]
+    }
+  ],
+  "icons": {
+    "16": "image/icon-32.png",
+    "48": "image/icon-32.png",
+    "128": "image/icon-32.png"
+  },
+  "manifest_version": 2
+}

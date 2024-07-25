@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	   <meta charset="utf-8" />
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popup.js"></script>
+    <style>
+        button {width:120px;}
+        /*button ~ button {margin-top:10px;}*/
+        .btn-copy {
+          background: url(image/amazon.ico) 2px center no-repeat;
+        }
+        .btn-paste {
+          background: url(image/postpony.png) 2px center no-repeat;
+        }
+        /* Style buttons */
+        .btn {
+          /*background-color: DodgerBlue;*/ /* Blue background */
+          border: none; /* Remove borders */
+          border-radius: 4px;
+          outline: none;
+          /*color: white;*/ /* White text */
+          padding: 6px 6px 8px 20px; /* Some padding */
+          font-size: 12px; /* Set a font size */
+          cursor: pointer; /* Mouse pointer on hover */
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+          background-color: RoyalBlue;
+          color: white;
+        }
+        .line_01{
+          height: 1px;
+          border-bottom: 1px solid #ddd;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnCopy" class="btn btn-copy">复制亚马逊订单</button>
+    <div class="line_01"></div>
+    <button id="btnPaste" class="btn btn-paste">粘贴到小马UPS</button>
+</body>
+</html>
